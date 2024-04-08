@@ -193,6 +193,7 @@ fn derive_priv_child(key: &[u8; 32], chaincode: &[u8; 32], index: u32) -> Result
 // Given an extended private key and a BIP32 derivation path, compute the child private key found at the last path
 // The derivation path is formatted as an array of (index: int, hardened: bool) tuples.
 // (weekend task)
+// HMACS AND PDF3. todo(derive the path)
 fn get_child_key_at_path(key: [u8; 32], chaincode: [u8; 32], paths: Vec<(u32, bool)>) -> ChildKey {
   
 }
